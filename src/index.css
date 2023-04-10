@@ -1,5 +1,11 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +13,91 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  font-size: 1.6rem;
 }
+
+
+h1{
+  font-size: 6rem;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+.app:before {
+  content: '';
+  background-image: url('./assets/stephany-lorena-tVjhiGYekLM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search{
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+}
+
+.app .search input {
+  color: white;
+}
+
+::placeholder{
+  color: white;
+}
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*margin-top: auto;  push the forecast to the bottom of the container */
+  padding: 1rem;
+}
+
